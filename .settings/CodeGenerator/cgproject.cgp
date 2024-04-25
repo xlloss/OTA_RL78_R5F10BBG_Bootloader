@@ -1464,7 +1464,7 @@
           <setting name="RECEIVE_PARITY_ODD" value="false" />
           <setting name="RECEIVE_PARITY_ZERO" value="false" />
           <setting name="RECEIVE_PARITY_NONE" value="true" />
-          <setting name="RECEIVE_TRANSFER_BAUDRATE_VALUE" value="9600" />
+          <setting name="RECEIVE_TRANSFER_BAUDRATE_VALUE" value="38400" />
           <setting name="CALLBACK_RECEIVE_END_USE" value="true" />
           <setting name="Receive_error_callback_function" value="generated" />
           <setting name="TRANSFER_MODE_CONTINUOUS" value="false" />
@@ -1483,7 +1483,7 @@
           <setting name="TRANSMIT_PARITY_NONE" value="true" />
           <setting name="TRANSMIT_STOP_LENGTH_2_BITS" value="false" />
           <setting name="TRANSMIT_STOP_LENGTH_1_BIT" value="true" />
-          <setting name="TRANSMIT_TRANSFER_BAUDRATE_VALUE" value="9600" />
+          <setting name="TRANSMIT_TRANSFER_BAUDRATE_VALUE" value="38400" />
           <setting name="CALLBACK_TRANSMIT_END_USE" value="true" />
           <setting name="INT_PRIORITY_TRANSMIT_END" value="3" />
           <setting name="INT_PRIORITY_RECEPTION_END" value="3" />
