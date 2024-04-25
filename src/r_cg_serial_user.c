@@ -51,6 +51,8 @@ extern volatile uint16_t  g_uart0_tx_count;            /* uart0 send data number
 extern volatile uint8_t * gp_uart0_rx_address;         /* uart0 receive buffer address */
 extern volatile uint16_t  g_uart0_rx_count;            /* uart0 receive data number */
 extern volatile uint16_t  g_uart0_rx_length;           /* uart0 receive data length */
+extern volatile uint8_t   uart_snd_flag;
+extern volatile uint8_t   uart_rcv_done;
 /* Start user code for global. Do not edit comment generated here */
 /* End user code. Do not edit comment generated here */
 
@@ -121,6 +123,7 @@ static void __near r_uart0_interrupt_send(void)
 static void r_uart0_callback_receiveend(void)
 {
     /* Start user code. Do not edit comment generated here */
+    uart_rcv_done = 1;
     /* End user code. Do not edit comment generated here */
 }
 
@@ -146,6 +149,7 @@ static void r_uart0_callback_softwareoverrun(uint16_t rx_data)
 static void r_uart0_callback_sendend(void)
 {
     /* Start user code. Do not edit comment generated here */
+    uart_snd_flag = 1;
     /* End user code. Do not edit comment generated here */
 }
 
